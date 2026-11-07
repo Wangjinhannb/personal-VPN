@@ -1,0 +1,11 @@
+[Interface]
+# Replace placeholders. Never commit a real private key.
+Address = 10.66.66.1/24, fd00:1234:5678:1::1/64
+ListenPort = 51820
+PrivateKey = SERVER_PRIVATE_KEY
+MTU = 1380
+
+# Add one [Peer] block per client. Clients have unique /32 and /128 addresses.
+# [Peer]
+# PublicKey = CLIENT_PUBLIC_KEY
+# AllowedIPs = 10.66.66.2/32, fd00:1234:5678:1::2/128

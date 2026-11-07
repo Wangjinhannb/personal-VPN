@@ -1,0 +1,12 @@
+[Interface]
+# Generate this private key locally on the client device.
+PrivateKey = CLIENT_PRIVATE_KEY
+Address = 10.66.66.2/32, fd00:1234:5678:1::2/128
+DNS = 1.1.1.1, 2606:4700:4700::1111
+MTU = 1380
+
+[Peer]
+PublicKey = SERVER_PUBLIC_KEY
+Endpoint = SERVER_PUBLIC_IP_OR_DNS:51820
+AllowedIPs = 0.0.0.0/0, ::/0
+PersistentKeepalive = 25
